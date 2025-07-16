@@ -1,0 +1,185 @@
+#wrap {
+  width: 100%;
+}
+.inner {
+  width: 1400px;
+  margin: auto;
+  box-sizing: border-box;
+  position: relative;
+}
+
+/* S : top-gnb */
+#wrap {
+  .top-gnb {
+    width: 100%;
+    border-bottom: 1px solid #d9d9d9;
+    .inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .info {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        i {
+          width: 28px;
+          height: 20px;
+        }
+        span {
+          font-family: "Pretendard";
+          font-size: 12px;
+        }
+      }
+      .gnb {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        li {
+          a {
+            height: 40px;
+            line-height: 40px;
+            display: inline-block;
+            font-family: "Pretendard";
+            font-size: 14px;
+            padding: 0 30px;
+            border-left: 1px solid #d9d9d9;
+            border-right: 1px solid #d9d9d9;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* E : top-gnb */
+#header {
+  .inner {
+    .con {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 0;
+      .logo {
+        width: 148.203px;
+        height: 40px;
+        a {
+          width: 100%;
+          height: 100%;
+          display: inline-block;
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
+      .logo2 {
+        width: 114.416px;
+        height: 50px;
+        a {
+          width: 100%;
+          height: 100%;
+          display: inline-block;
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
+      .nav {
+        ul {
+          display: flex;
+          justify-content: center;
+          gap: 70px;
+          align-items: center;
+          li {
+            a {
+              display: inline-block;
+              font-family: SeoulNamsan;
+              font-size: 17px;
+              font-weight: 600;
+              position: relative;
+              &:hover {
+                color: var(--Colors-Blue-Normal, #007a9f);
+                font-size: 17px;
+                font-weight: 600;
+                &::after {
+                  content: "";
+                  position: absolute;
+                  top: 307%;
+                  left: 0;
+                  width: 100%;
+                  height: 3px;
+                  background: var(--Colors-Pink-Normal, #e9537c);
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .line {
+    width: 100%;
+    height: 1px;
+    background-color: #d9d9d9;
+  }
+  .bottom-nav {
+    width: 100%;
+    .inner {
+      padding: 30px 0;
+      .category {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 16px;
+        .category-item {
+          width: 186px;
+          height: 48px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 10px;
+          border: 1px solid var(--Colors-Black-black-6, #bfbfbf);
+          color: var(--Colors-Black-black-8, #595959);
+          position: relative;
+          .depth2 {
+            width: 186px;
+            position: absolute;
+            left: 0;
+            top: 120%;
+            display: flex;
+            flex-direction: column;
+            li {
+              border: none;
+              color: var(--Colors-Black-black-7, #8c8c8c);
+              font-size: 14px;
+              font-style: normal;
+              font-weight: 600;
+              line-height: 26px;
+              padding-left: 20px;
+              position: relative;
+              &::after {
+                content: "";
+                width: 4px;
+                height: 4px;
+                background-color: #8c8c8c;
+                border-radius: 100%;
+                position: absolute;
+                top: 50%;
+                left: 7px;
+                transform: translateY(-50%);
+              }
+              &:hover {
+                color: #e9537c;
+                &::after {
+                  background-color: #e9537c;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

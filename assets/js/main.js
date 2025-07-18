@@ -1,9 +1,11 @@
-import Section1 from './section1.js';
-import Section2 from './section2.js';
+import Header from './modules/header.js';
+import Section2 from './modules/section2.js';
+import Section3 from './modules/section3.js';
 
 const init = () => {
-    Section1.init();
+    Header.init();
     Section2.init();
+    Section3.init();
 };
 
 init();

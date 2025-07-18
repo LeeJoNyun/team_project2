@@ -2,7 +2,7 @@ const get = (target) => document.querySelector(target);
 const getAll = (target) => document.querySelectorAll(target);
 
 
-const Section1 = {
+const Header = {
 
     navMenuHandler: () => {
         const navs = getAll('.nav ul li');
@@ -28,4 +28,4 @@ const Section1 = {
     }
 }
 
-export default Section1;
+export default Header;

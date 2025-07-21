@@ -8,19 +8,20 @@ const Section1 = {
             slidesPerView: 3,
             centeredSlides: true,
             loop: true,
-            spaceBetween: 20,
+            spaceBetween: -22, // ← 겹치는 정도 줄임
             pagination: {
                 el: '.swiper-pagination',
                 clickable: true,
-                renderBullet: function (index, className) {
-                    return '<span class="' + className + '">' + (index + 1) + '</span>';
-                },
             },
             navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
+                nextEl: '.section1_swiper-button-next',
+                prevEl: '.section1_swiper-button-prev',
+            },
+            autoplay: {
+                delay: 5000,
             },
         });
+
     },
 
     init() {

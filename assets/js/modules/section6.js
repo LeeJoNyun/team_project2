@@ -28,7 +28,7 @@ const Section6 = {
         var swiper = new Swiper(".section6-swiper", {
             slidesPerView: "auto",
             loop: true,
-            spaceBetween: 30, // ← 겹치는 정도 줄임
+            spaceBetween: 30,
             navigation: {
                 nextEl: '.section6_swiper-button-next',
                 prevEl: '.section6_swiper-button-prev',

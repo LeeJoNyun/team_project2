@@ -377,7 +377,6 @@
       align-items: center;
       gap: 235px;
       right: 20px;
-      // left: -336px;
       .swiper-slide {
         width: 690px;
         height: 350px;
@@ -427,12 +426,12 @@
       }
     }
     .swiper-button-prev {
-      left: 28px;
+      left: 0;
       top: 60%;
       transform: translateY(-50%);
     }
     .swiper-button-next {
-      right: 17px;
+      right: 0;
       top: 60%;
       transform: translateY(-50%);
     }

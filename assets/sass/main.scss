@@ -261,9 +261,10 @@
         left: 251px;
         transform: translateY(-50%);
         .title1 {
+          display: block;
           font-size: 44px;
           font-weight: 600;
-          margin-bottom: 5px;
+          margin-bottom: 10px;
         }
         .title2 {
           font-size: 64px;
@@ -362,11 +363,10 @@
   background-color: #fff;
   .inner {
     height: 100%;
-    overflow: hidden; // ✅ 이거 추가
-
+    position: relative;
     .swiper {
       position: absolute;
-      height: 350px;
+      height: 370px;
       overflow: hidden;
       width: 100%;
       left: 50%;
@@ -418,11 +418,17 @@
     .swiper-pagination {
       position: absolute;
       left: 50%;
-      bottom: 148px;
+      bottom: 0;
       transform: translateX(-50%);
       display: flex;
       justify-content: center;
       align-items: center;
+      span {
+        width: 10px;
+        height: 10px;
+        border-radius: 5px;
+        background: var(--Colors-Black-black-6, #bfbfbf);
+      }
     }
     .swiper-pagination-bullet {
       width: 10px;

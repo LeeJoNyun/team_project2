@@ -238,9 +238,10 @@
   transform: translateY(-50%);
 }
 #main-banner .swiper .swiper-slide article .title1 {
+  display: block;
   font-size: 44px;
   font-weight: 600;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 #main-banner .swiper .swiper-slide article .title2 {
   font-size: 64px;
@@ -334,13 +335,13 @@
 }
 #section1 .inner {
   height: 100%;
-  overflow: hidden;
+  position: relative;
   /* ARROWS */
   /* PAGINATION */
 }
 #section1 .inner .swiper {
   position: absolute;
-  height: 350px;
+  height: 370px;
   overflow: hidden;
   width: 100%;
   left: 50%;
@@ -387,11 +388,17 @@
 #section1 .inner .swiper-pagination {
   position: absolute;
   left: 50%;
-  bottom: 148px;
+  bottom: 0;
   transform: translateX(-50%);
   display: flex;
   justify-content: center;
   align-items: center;
+}
+#section1 .inner .swiper-pagination span {
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background: var(--Colors-Black-black-6, #bfbfbf);
 }
 #section1 .inner .swiper-pagination-bullet {
   width: 10px;

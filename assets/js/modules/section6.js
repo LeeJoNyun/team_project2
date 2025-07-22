@@ -27,8 +27,9 @@ const Section6 = {
     section6_swiper: () => {
         var swiper = new Swiper(".section6-swiper", {
             slidesPerView: "auto",
+            loopAdditionalSlides: 1,
             loop: true,
-            spaceBetween: 30,
+            spaceBetween: 50,
             navigation: {
                 nextEl: '.section6_swiper-button-next',
                 prevEl: '.section6_swiper-button-prev',

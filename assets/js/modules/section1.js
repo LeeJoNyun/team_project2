@@ -8,10 +8,13 @@ const Section1 = {
             slidesPerView: 3,
             centeredSlides: true,
             loop: true,
-            spaceBetween: -22, // ← 겹치는 정도 줄임
+            spaceBetween: -20, // ← 겹치는 정도 줄임
             pagination: {
                 el: '.swiper-pagination',
                 clickable: true,
+                renderBullet: function (index, className) {
+                    return `<span class="${className}"></span>`;
+                },
             },
             navigation: {
                 nextEl: '.section1_swiper-button-next',

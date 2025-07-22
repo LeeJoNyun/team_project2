@@ -368,7 +368,7 @@
       position: absolute;
       height: 370px;
       overflow: hidden;
-      width: 100%;
+      width: 1258px;
       left: 50%;
       top: 56%;
       transform: translateX(-50%) translateY(-50%);
@@ -402,6 +402,7 @@
     /* ARROWS */
     .swiper-button-prev,
     .swiper-button-next {
+      position: absolute;
       width: 65px;
       height: 65px;
       &::after {
@@ -413,7 +414,16 @@
         }
       }
     }
-
+    .swiper-button-prev {
+      left: 28px;
+      top: 60%;
+      transform: translateY(-50%);
+    }
+    .swiper-button-next {
+      right: 17px;
+      top: 60%;
+      transform: translateY(-50%);
+    }
     /* PAGINATION */
     .swiper-pagination {
       position: absolute;

@@ -8,7 +8,7 @@ const Section1 = {
             slidesPerView: 3,
             centeredSlides: true,
             loop: true,
-            spaceBetween: -20, // ← 겹치는 정도 줄임
+            spaceBetween: -18, // ← 겹치는 정도 줄임
             pagination: {
                 el: '.swiper-pagination',
                 clickable: true,

@@ -1,14 +1,14 @@
 const get = (target) => document.querySelector(target);
 const getAll = (target) => document.querySelectorAll(target);
 const data = [
-    { src: "../assets/images/section4/archive_1.png", title: "기후동행카드", tags: ["교통정책", "교통카드"] },
-    { src: "../assets/images/section4/archive_2.png", title: "미리내집", tags: ["SH공사", "미리내집"] },
-    { src: "../assets/images/section4/archive_3.png", title: "한강불빛공연 드론라이트쇼", tags: ["드론라이트쇼", "드론쇼"] },
-    { src: "../assets/images/section4/archive_4.png", title: "쉬엄쉬엄 한강 3종 축제", tags: ["관광정책", "그레이트한강"] },
-    { src: "../assets/images/section4/archive_5.png", title: "손목닥터9988", tags: ["9988", "복지", "손닥"] },
-    { src: "../assets/images/section4/archive_6.png", title: "서울형 키즈카페", tags: ["아이돌봄", "육아정책"] },
-    { src: "../assets/images/section4/archive_7.png", title: "러너스테이션", tags: ["달리기", "러너들의성지"] },
-    { src: "../assets/images/section4/archive_8.png", title: "서울야외도서관", tags: ["광화문책마당", "독서"] }
+    { src: "./assets/images/section4/archive_1.png", title: "기후동행카드", tags: ["교통정책", "교통카드"] },
+    { src: "./assets/images/section4/archive_2.png", title: "미리내집", tags: ["SH공사", "미리내집"] },
+    { src: "./assets/images/section4/archive_3.png", title: "한강불빛공연 드론라이트쇼", tags: ["드론라이트쇼", "드론쇼"] },
+    { src: "./assets/images/section4/archive_4.png", title: "쉬엄쉬엄 한강 3종 축제", tags: ["관광정책", "그레이트한강"] },
+    { src: "./assets/images/section4/archive_5.png", title: "손목닥터9988", tags: ["9988", "복지", "손닥"] },
+    { src: "./assets/images/section4/archive_6.png", title: "서울형 키즈카페", tags: ["아이돌봄", "육아정책"] },
+    { src: "./assets/images/section4/archive_7.png", title: "러너스테이션", tags: ["달리기", "러너들의성지"] },
+    { src: "./assets/images/section4/archive_8.png", title: "서울야외도서관", tags: ["광화문책마당", "독서"] }
 ]
 
 const Section4 = {

@@ -823,6 +823,13 @@
             }
           }
         }
+        .section4-swiper-button-next,
+        .section4-swiper-button-prev {
+          color: #bfbfbf;
+          &:hover {
+            color: #e9537c;
+          }
+        }
       }
     }
   }

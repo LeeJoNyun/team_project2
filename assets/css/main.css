@@ -786,6 +786,14 @@
   line-height: 20px;
   margin-right: 16px;
 }
+#section4 .inner .con .slider .section4-swiper-button-next,
+#section4 .inner .con .slider .section4-swiper-button-prev {
+  color: #bfbfbf;
+}
+#section4 .inner .con .slider .section4-swiper-button-next:hover,
+#section4 .inner .con .slider .section4-swiper-button-prev:hover {
+  color: #e9537c;
+}
 
 /* E : section4 */
 #section5 .inner {

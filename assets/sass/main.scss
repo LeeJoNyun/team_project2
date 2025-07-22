@@ -162,8 +162,10 @@
         gap: 16px;
         .category-item {
           cursor: pointer;
-          width: 186px;
+          // width: 186px;
           height: 48px;
+          flex: 1; /* 아이템을 균등 분배 */
+          min-width: 100px; /* 너무 작아지지 않도록 제한 */
           display: flex;
           justify-content: center;
           align-items: center;

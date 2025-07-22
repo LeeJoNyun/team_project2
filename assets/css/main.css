@@ -313,6 +313,7 @@
   gap: 30px;
 }
 #main-banner .search .search-list .tags li {
+  cursor: pointer;
   display: block;
   width: auto;
   color: var(--Colors-Black-black-8, #595959);
@@ -340,37 +341,47 @@
   /* PAGINATION */
 }
 #section1 .inner .swiper {
-  position: absolute;
-  height: 370px;
-  overflow: hidden;
-  width: 1258px;
-  left: 50%;
-  top: 56%;
-  transform: translateX(-50%) translateY(-50%);
+  padding-top: 150px;
+  width: 100%;
+  height: 600px;
 }
 #section1 .inner .swiper-wrapper {
+  width: 100%;
+  height: 100%;
   display: flex;
   align-items: center;
+  gap: 235px;
+  right: 20px;
 }
-#section1 .inner .swiper-slide {
+#section1 .inner .swiper-wrapper .swiper-slide {
   width: 690px;
+  height: 350px;
   flex-shrink: 0;
-  height: 270px;
   border-radius: 20px;
-  border: 1px solid var(--Colors-Black-black-1, #fff);
   transform: scale(0.9);
   opacity: 0.3;
   transition: all 0.3s ease;
+  margin-left: -196px;
+  border: none;
 }
-#section1 .inner .swiper-slide img {
-  width: 100%;
-  height: 100%;
+#section1 .inner .swiper-wrapper .swiper-slide img {
+  width: 690px;
+  height: 350px;
   border-radius: 20px;
+  transform: scale(0.9);
 }
-#section1 .inner .swiper-slide.swiper-slide-active {
-  transform: scale(1.2);
+#section1 .inner .swiper-wrapper .swiper-slide.swiper-slide-prev {
+  left: 186px;
+}
+#section1 .inner .swiper-wrapper .swiper-slide.swiper-slide-active {
+  position: relative;
+  left: 0;
+  transform: scale(1.1);
   opacity: 1;
   z-index: 2;
+}
+#section1 .inner .swiper-wrapper .swiper-slide.swiper-slide-next {
+  right: 186px;
 }
 #section1 .inner .swiper-button-prev,
 #section1 .inner .swiper-button-next {
@@ -399,7 +410,7 @@
 #section1 .inner .swiper-pagination {
   position: absolute;
   left: 50%;
-  bottom: 0;
+  bottom: 97px;
   transform: translateX(-50%);
   display: flex;
   justify-content: center;
@@ -446,7 +457,7 @@
 #section2 .inner .title strong {
   display: block;
   color: var(--Colors-Black-black-10, #262626);
-  font-family: "SeoulNamsan CEB";
+  font-family: "SeoulNamsanM";
   font-size: 28px;
   font-weight: 600;
 }
@@ -647,7 +658,7 @@
 #section3 .inner .context strong {
   display: block;
   color: var(--Colors-Black-black-10, #262626);
-  font-family: "SeoulNamsan CEB";
+  font-family: "SeoulNamsanM";
   font-size: 19px;
   font-style: normal;
   font-weight: 600;
@@ -735,7 +746,7 @@
 #section4 .inner .con .title {
   display: block;
   color: var(--Colors-Black-black-10, #262626);
-  font-family: "SeoulNamsan CEB";
+  font-family: "SeoulNamsanM";
   font-size: 24px;
   font-weight: 600;
   margin-bottom: 50px;
@@ -835,39 +846,30 @@
   overflow: hidden;
 }
 #section5 .inner .con .left .section4-nav li {
+  cursor: pointer;
   width: 226px;
   height: 70px;
   border-right: 1px solid var(--Colors-Black-black-5, #d9d9d9);
   border-bottom: 1px solid var(--Colors-Black-black-5, #d9d9d9);
-}
-#section5 .inner .con .left .section4-nav li a {
-  display: block;
-  width: 100%;
-  height: 100%;
   line-height: 70px;
   text-align: center;
   font-size: 24px;
   font-weight: 600;
 }
-#section5 .inner .con .left .section4-nav li a:hover {
+#section5 .inner .con .left .section4-nav li:hover {
   background: var(--Colors-Blue-Normal, #007a9f);
   color: white;
 }
 #section5 .inner .con .left .section4-nav li:first-child {
   border-top-left-radius: 20px;
 }
-#section5 .inner .con .left .section4-nav li:first-child a {
-  border-top-left-radius: 20px;
-}
-#section5 .inner .con .left .section4-nav li:first-child a:hover {
-  border-top-left-radius: 20px;
-}
 #section5 .inner .con .left .section4-nav li:last-child {
   border-right: none;
   border-top-right-radius: 20px;
 }
-#section5 .inner .con .left .section4-nav li:last-child a:hover {
-  border-top-right-radius: 20px;
+#section5 .inner .con .left .section4-nav li.active {
+  background: var(--Colors-Blue-Normal, #007a9f);
+  color: white;
 }
 #section5 .inner .con .left .con-box {
   position: relative;
@@ -1002,7 +1004,7 @@
   display: block;
   color: var(--Colors-Black-black-10, #262626);
   text-align: center;
-  font-family: "SeoulNamsan CEB";
+  font-family: "SeoulNamsanM";
   font-size: 28px;
   font-weight: 600;
   text-align: center;
@@ -1073,7 +1075,7 @@
   display: block;
   color: var(--Colors-Black-black-10, #262626);
   text-align: center;
-  font-family: "SeoulNamsan CEB";
+  font-family: "SeoulNamsanM";
   font-size: 28px;
   font-weight: 600;
   text-align: center;
@@ -1185,7 +1187,7 @@
 }
 #section7 .inner .contents .top strong {
   color: var(--Colors-Black-black-10, #262626);
-  font-family: "SeoulNamsan CEB";
+  font-family: "SeoulNamsanM";
   font-size: 28px;
 }
 #section7 .inner .contents article {

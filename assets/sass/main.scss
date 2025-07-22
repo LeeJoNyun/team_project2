@@ -338,6 +338,7 @@
         justify-content: center;
         gap: 30px;
         li {
+          cursor: pointer;
           display: block;
           width: auto;
           color: var(--Colors-Black-black-8, #595959);
@@ -365,37 +366,48 @@
     height: 100%;
     position: relative;
     .swiper {
-      position: absolute;
-      height: 370px;
-      overflow: hidden;
-      width: 1258px;
-      left: 50%;
-      top: 56%;
-      transform: translateX(-50%) translateY(-50%);
+      padding-top: 150px;
+      width: 100%;
+      height: 600px;
     }
     .swiper-wrapper {
+      width: 100%;
+      height: 100%;
       display: flex;
       align-items: center;
-    }
-    .swiper-slide {
-      width: 690px;
-      flex-shrink: 0;
-      height: 270px;
-      border-radius: 20px;
-      border: 1px solid var(--Colors-Black-black-1, #fff);
-      transform: scale(0.9);
-      opacity: 0.3;
-      transition: all 0.3s ease;
-
-      img {
-        width: 100%;
-        height: 100%;
+      gap: 235px;
+      right: 20px;
+      // left: -336px;
+      .swiper-slide {
+        width: 690px;
+        height: 350px;
+        flex-shrink: 0;
         border-radius: 20px;
-      }
-      &.swiper-slide-active {
-        transform: scale(1.2);
-        opacity: 1;
-        z-index: 2;
+        transform: scale(0.9);
+        opacity: 0.3;
+        transition: all 0.3s ease;
+        margin-left: -196px;
+        border: none;
+        img {
+          width: 690px;
+          height: 350px;
+          border-radius: 20px;
+          transform: scale(0.9);
+        }
+        &.swiper-slide-prev {
+          left: 186px;
+        }
+        &.swiper-slide-active {
+          position: relative;
+          left: 0;
+          // transform: translateX(-50%);
+          transform: scale(1.1);
+          opacity: 1;
+          z-index: 2;
+        }
+        &.swiper-slide-next {
+          right: 186px;
+        }
       }
     }
 
@@ -428,7 +440,7 @@
     .swiper-pagination {
       position: absolute;
       left: 50%;
-      bottom: 0;
+      bottom: 97px;
       transform: translateX(-50%);
       display: flex;
       justify-content: center;
@@ -474,7 +486,7 @@
       strong {
         display: block;
         color: var(--Colors-Black-black-10, #262626);
-        font-family: "SeoulNamsan CEB";
+        font-family: "SeoulNamsanM";
         font-size: 28px;
         font-weight: 600;
       }
@@ -678,7 +690,7 @@
       strong {
         display: block;
         color: var(--Colors-Black-black-10, #262626);
-        font-family: "SeoulNamsan CEB";
+        font-family: "SeoulNamsanM";
         font-size: 19px;
         font-style: normal;
         font-weight: 600;
@@ -771,7 +783,7 @@
       .title {
         display: block;
         color: var(--Colors-Black-black-10, #262626);
-        font-family: "SeoulNamsan CEB";
+        font-family: "SeoulNamsanM";
         font-size: 24px;
         font-weight: 600;
         margin-bottom: 50px;
@@ -873,40 +885,55 @@
           box-sizing: border-box;
           overflow: hidden;
           li {
+            cursor: pointer;
             width: 226px;
             height: 70px;
             border-right: 1px solid var(--Colors-Black-black-5, #d9d9d9);
             border-bottom: 1px solid var(--Colors-Black-black-5, #d9d9d9);
-            a {
-              display: block;
-              width: 100%;
-              height: 100%;
-              line-height: 70px;
-              text-align: center;
-              font-size: 24px;
-              font-weight: 600;
-              &:hover {
-                background: var(--Colors-Blue-Normal, #007a9f);
-                color: white;
-              }
+            line-height: 70px;
+            text-align: center;
+            font-size: 24px;
+            font-weight: 600;
+            &:hover {
+              background: var(--Colors-Blue-Normal, #007a9f);
+              color: white;
             }
+            // a {
+            //   display: block;
+            //   width: 100%;
+            //   height: 100%;
+            //   line-height: 70px;
+            //   text-align: center;
+            //   font-size: 24px;
+            //   font-weight: 600;
+            //   &:hover {
+            //     background: var(--Colors-Blue-Normal, #007a9f);
+            //     color: white;
+            //   }
+            // }
             &:first-child {
               border-top-left-radius: 20px;
-              a {
-                border-top-left-radius: 20px;
-                &:hover {
-                  border-top-left-radius: 20px;
-                }
-              }
+              // a {
+              //   border-top-left-radius: 20px;
+              //   &:hover {
+              //     border-top-left-radius: 20px;
+              //   }
+              // }
             }
             &:last-child {
               border-right: none;
               border-top-right-radius: 20px;
-              a {
-                &:hover {
-                  border-top-right-radius: 20px;
-                }
-              }
+              // a {
+              //   &:hover {
+              //     border-top-right-radius: 20px;
+              //   }
+              // }
+            }
+            &.active {
+              background: var(--Colors-Blue-Normal, #007a9f);
+              color: white;
+              // a {
+              // }
             }
           }
         }
@@ -1046,7 +1073,7 @@
       display: block;
       color: var(--Colors-Black-black-10, #262626);
       text-align: center;
-      font-family: "SeoulNamsan CEB";
+      font-family: "SeoulNamsanM";
       font-size: 28px;
       font-weight: 600;
       text-align: center;
@@ -1119,7 +1146,7 @@
       display: block;
       color: var(--Colors-Black-black-10, #262626);
       text-align: center;
-      font-family: "SeoulNamsan CEB";
+      font-family: "SeoulNamsanM";
       font-size: 28px;
       font-weight: 600;
       text-align: center;
@@ -1230,7 +1257,7 @@
         margin-bottom: 50px;
         strong {
           color: var(--Colors-Black-black-10, #262626);
-          font-family: "SeoulNamsan CEB";
+          font-family: "SeoulNamsanM";
           font-size: 28px;
         }
       }

@@ -4,6 +4,7 @@ import Section1 from './modules/section1.js';
 import Section2 from './modules/section2.js';
 import Section3 from './modules/section3.js';
 import Section4 from './modules/section4.js';
+import Section5 from './modules/section5.js';
 import Section6 from './modules/section6.js';
 import Section7 from './modules/section7.js';
 
@@ -41,6 +42,7 @@ const init = () => {
     Section3.init();
     Section4.init();
     Section6.init();
+    Section5.init();
     Section7.init();
 };
 

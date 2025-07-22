@@ -8,7 +8,8 @@ const Section1 = {
             slidesPerView: 3,
             centeredSlides: true,
             loop: true,
-            spaceBetween: -18, // ← 겹치는 정도 줄임
+            // loopAdditionalSlides: 1,
+            // spaceBetween: -800,
             pagination: {
                 el: '.swiper-pagination',
                 clickable: true,
@@ -20,9 +21,9 @@ const Section1 = {
                 nextEl: '.section1_swiper-button-next',
                 prevEl: '.section1_swiper-button-prev',
             },
-            autoplay: {
-                delay: 5000,
-            },
+            // autoplay: {
+            //     delay: 5000,
+            // },
         });
 
     },

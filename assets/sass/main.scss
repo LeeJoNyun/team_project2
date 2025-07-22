@@ -445,6 +445,7 @@
   justify-content: center;
   align-items: center;
   .inner {
+    box-sizing: border-box;
     height: 628px;
     display: flex;
     flex-wrap: wrap;
@@ -458,10 +459,8 @@
         display: block;
         color: var(--Colors-Black-black-10, #262626);
         font-family: "SeoulNamsan CEB";
-        font-size: 19px;
-        font-style: normal;
+        font-size: 28px;
         font-weight: 600;
-        line-height: normal;
       }
     }
     .cards {

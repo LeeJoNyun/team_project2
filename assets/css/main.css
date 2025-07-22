@@ -1159,6 +1159,7 @@
   left: 50%;
   bottom: 30px;
   transform: translateX(-50%);
+  line-height: 1.5;
 }
 #section6 .inner2 .section6-swiper .swiper-button-prev {
   position: absolute;

@@ -1,6 +1,15 @@
 const get = (target) => document.querySelector(target);
 const getAll = (target) => document.querySelectorAll(target);
 
+const data = [
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+
+];
 
 const Header = {
 

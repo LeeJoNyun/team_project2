@@ -1,3 +1,4 @@
+@charset "UTF-8";
 #wrap,
 #footer {
   width: 100%;
@@ -782,6 +783,22 @@
   box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.12);
   position: relative;
 }
+#section4 .inner .con .slider .section4-swiper-container .swiper-wrapper .swiper-slide .cate {
+  position: absolute;
+  top: -18px;
+  left: 30px;
+  color: var(--Colors-Black-black-1, #fff);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px; /* 142.857% */
+  border-radius: 20px;
+  background: var(--Colors-Pink-Normal, #e9537c);
+  width: 45px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  z-index: 3;
+}
 #section4 .inner .con .slider .section4-swiper-container .swiper-wrapper .swiper-slide img {
   width: 224px;
   height: 224px;
@@ -876,22 +893,29 @@
 }
 #section5 .inner .con .left .con-box ul {
   position: absolute;
-  left: 50px;
   top: 30px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 #section5 .inner .con .left .con-box ul li {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 88px;
-  width: 100%;
+  width: 574px;
   height: 50px;
 }
 #section5 .inner .con .left .con-box ul li a {
+  width: 404px;
+  text-align: left;
   display: block;
   color: var(--Colors-Black-black-9, #454545);
   font-size: 16px;
   font-weight: 500;
   line-height: 50px; /* 312.5% */
+  white-space: nowrap; /* 줄바꿈 안 함 */
+  overflow: hidden; /* 넘치는 부분 숨김 */
+  text-overflow: ellipsis; /* ...으로 표시 */
 }
 #section5 .inner .con .left .con-box ul li a:hover {
   text-decoration: underline;

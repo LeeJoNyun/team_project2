@@ -1241,10 +1241,14 @@
 #section7 .inner .contents article .plus:hover path {
   fill: #e9537c;
 }
-#section7 .inner .contents article img {
+#section7 .inner .contents article .youtube {
   width: 304px;
   height: 165px;
+}
+#section7 .inner .contents article .youtube iframe {
   border-radius: 20px;
+  width: 100%;
+  height: 100%;
 }
 #section7 .inner .contents .sns {
   border-radius: 20px;

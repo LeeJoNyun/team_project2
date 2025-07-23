@@ -20,6 +20,7 @@ const Section7 = {
         });
 
     },
+
     init() {
         this.section7_swiper();
     }

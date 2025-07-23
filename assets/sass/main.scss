@@ -1283,10 +1283,14 @@
             }
           }
         }
-        img {
+        .youtube {
           width: 304px;
           height: 165px;
-          border-radius: 20px;
+          iframe {
+            border-radius: 20px;
+            width: 100%;
+            height: 100%;
+          }
         }
       }
       .sns {

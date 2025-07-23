@@ -29,7 +29,7 @@ const Section6 = {
             slidesPerView: "auto",
             loopAdditionalSlides: 1,
             loop: true,
-            spaceBetween: 50,
+            spaceBetween: 30,
             navigation: {
                 nextEl: '.section6_swiper-button-next',
                 prevEl: '.section6_swiper-button-prev',

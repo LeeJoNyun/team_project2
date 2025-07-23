@@ -14,9 +14,9 @@ const Section7 = {
                 nextEl: '.section7_swiper-button-next',
                 prevEl: '.section7_swiper-button-prev',
             },
-            // autoplay: {
-            //     delay: 5000,
-            // },
+            autoplay: {
+                delay: 5000,
+            },
         });
 
     },

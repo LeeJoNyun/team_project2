@@ -1162,6 +1162,12 @@
   transform: translateX(-50%);
   line-height: 1.5;
 }
+#section6 .inner2 .section6-swiper .swiper-wrapper .swiper-slide:nth-child(even) {
+  margin-top: 60px;
+}
+#section6 .inner2 .section6-swiper .swiper-wrapper .swiper-slide:nth-child(odd) {
+  margin-bottom: 60px;
+}
 #section6 .inner2 .section6-swiper .swiper-button-prev {
   position: absolute;
   left: -35px;
@@ -1215,6 +1221,7 @@
   color: var(--Colors-Black-black-10, #262626);
   font-family: "SeoulNamsanM";
   font-size: 28px;
+  font-weight: 600;
 }
 #section7 .inner .contents article {
   width: 304px;
@@ -1239,15 +1246,55 @@
   height: 165px;
   border-radius: 20px;
 }
-#section7 .inner .contents .banner {
-  cursor: pointer;
+#section7 .inner .contents .sns {
+  border-radius: 20px;
+  background: var(--Colors-Black-black-3, #f5f5f5);
   width: 658px;
   height: 134px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 47px;
 }
-#section7 .inner .contents .banner img {
+#section7 .inner .contents .sns .right {
+  width: 196px;
+  height: 58px;
+}
+#section7 .inner .contents .sns .right strong {
+  display: inline;
+  color: var(--Colors-Black-black-8, #595959);
+  font-family: "SeoulNamsanM";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-bottom: 15px;
+}
+#section7 .inner .contents .sns .right strong.pink {
+  color: var(--Colors-Pink-Normal, #e9537c);
+}
+#section7 .inner .contents .sns .right span {
+  display: block;
+}
+#section7 .inner .contents .sns .left {
+  width: 335px;
+  height: 35px;
+}
+#section7 .inner .contents .sns .left ul {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+#section7 .inner .contents .sns .left ul li {
+  cursor: pointer;
+  width: 35px;
+  height: 35px;
+}
+#section7 .inner .contents .sns .left ul li img {
   width: 100%;
   height: 100%;
-  border-radius: 20px;
 }
 #section7 .inner .right {
   display: flex;
